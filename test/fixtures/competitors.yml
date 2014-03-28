@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rank: MyString
+  name: MyString
+  state: MyString
+  debate_club: MyString
+  speech_club: MyString
+  points: MyString
+
+two:
+  rank: MyString
+  name: MyString
+  state: MyString
+  debate_club: MyString
+  speech_club: MyString
+  points: MyString

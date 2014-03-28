@@ -1,0 +1,37 @@
+<h1>Listing competitors</h1>
+
+<table class=".table">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>State</th>
+      <th>Debate club</th>
+      <th>Speech club</th>
+      <th>Points</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @competitors.each do |competitor| %>
+      <tr>
+        <td><%= competitor.rank %></td>
+        <td><%= competitor.name %></td>
+        <td><%= competitor.state %></td>
+        <td><%= competitor.debate_club %></td>
+        <td><%= competitor.speech_club %></td>
+        <td><%= competitor.points %></td>
+        <td><%= link_to 'Show', competitor %></td>
+        <td><%= link_to 'Edit', edit_competitor_path(competitor) %></td>
+        <td><%= link_to 'Destroy', competitor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Competitor', new_competitor_path %>
